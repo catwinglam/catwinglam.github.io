@@ -319,6 +319,24 @@ color:#BBB;
   float: left;
 }
 
+.twocolumnFun{
+	display: grid;
+	grid-template-columns: 22% 53%  ;
+	grid-column-gap: 5%;
+	padding: 10%;
+	font-size: 14px;
+	padding-bottom: 2%;
+}
+
+.funLeft{
+	position: relative;
+	text-align: right;
+}
+.funRight{
+	text-align: left;
+  float: left;
+}
+
 .Exhibitions{
 }
 
@@ -371,7 +389,7 @@ iframe {
     border-image: initial;
 }
 
-@media (max-width:1000px) {
+/* @media (max-width:1000px) {
 .worksthumbnail{
 	grid-template-columns: 23% 23% 23%;
 	grid-row-gap: 4%;
@@ -383,7 +401,7 @@ iframe {
 .worksthumbnail{
 	grid-template-columns: 36% 36%;
 	grid-row-gap: 2%;
-}
+} */
 
 /* @media only screen and (max-width:600px) {
 .worksthumbnail{
