@@ -1,1 +1,5 @@
-fungwinglam.com
+$ dig WWW.FUNGWINGLAM.COM +nostats +nocomments +nocmd
+  > ;WWW.FUNGWINGLAM.COM.                     IN      A
+  > WWW.FUNGWINGLAM.COM.              3592    IN      CNAME   cawintlam.github.io.
+  > catwinglam.github.io.      43192   IN      CNAME    GITHUB-PAGES-SERVER .
+  >  GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
