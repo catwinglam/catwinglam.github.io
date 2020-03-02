@@ -112,6 +112,14 @@ color:#BBB;
 .logo:hover{
   /* color:#BBB; */
 }
+.index{
+	padding-top: 160px;
+	padding-left: 30%;
+	padding-right: 5%;
+}
+.index img {
+	width:100%;
+}
 
 /* .title{
 	font-size:28px;
@@ -407,7 +415,7 @@ iframe {
 .worksthumbnail{
 	grid-template-columns: 90%;
 	grid-row-gap: 2%;
-} 
+}
 }*/
 
 
