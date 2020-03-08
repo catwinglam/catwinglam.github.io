@@ -74,17 +74,19 @@ body{
 	border-bottom:   1px solid rgba(0, 0, 0, 0.8); */
   font-size: 16px;
   text-align: center;
+	transition: all 0.5s;
 }
 
 .logo{
 	/* position: fixed; */
   /* display:block; */
   text-align: center;
-  /* font-size:28px; */
+  font-size: 16px;
 	float:left;
+	transition: all 1s;
 }
 
-.home:hover,.fun:hover,.works:hover,.about:hover {
+.logo:hover,.home:hover,.fun:hover,.works:hover,.about:hover {
 color:#BBB;
 }
 
