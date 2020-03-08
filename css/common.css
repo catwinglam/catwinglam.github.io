@@ -64,7 +64,7 @@ body{
 	margin-right: 4%; */
 	width:100%;
 	display: grid;
-	grid-template-columns: auto auto auto auto auto;
+	grid-template-columns: auto auto auto auto;
 	cursor:pointer;
 	z-index:1000;
 }
@@ -80,7 +80,7 @@ body{
 	/* position: fixed; */
   display:block;
   text-align: center;
-  font-size:28px;
+  /* font-size:28px; */
 	float:left;
 }
 
