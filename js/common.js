@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   $(".logo").click(function(){
     //$(".bio").fadeIn(800);
-  window.location.href = "index.html";
+  window.location.href = "index";
   // $(".cv").fadeIn(800);
   });
 
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
   $(".about").click(function(){
 	// showSection(".cv");
-  window.location.href = "cv.html";
+  window.location.href = "cv";
   $(".twocolumn").slideUp(800);
   // $(".cv").fadeIn(800);
   });
