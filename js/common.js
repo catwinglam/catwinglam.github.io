@@ -16,12 +16,12 @@ $(document).ready(function(){
 
   $(".fun").click(function(){
    	//$(".bio").fadeIn(800);
-    window.location.href = "fun.html";
+    window.location.href = "fun";
   });
 
   $(".works").click(function(){
     //$(".bio").fadeIn(800);
-    window.location.href = "works.html";
+    window.location.href = "works";
   });
 
   $(".about").click(function(){
