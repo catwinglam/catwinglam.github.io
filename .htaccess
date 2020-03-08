@@ -4,11 +4,11 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-d
 
+RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
+RewriteRule (.*)index.html$ /$1 [R=301,L]
+
 # Check for file in directory with .html extension
 
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
 RewriteRule ^(.*)$ $1.html [NC,L]
-
-RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
-RewriteRule (.*)index.html$ /$1 [R=301,L]
