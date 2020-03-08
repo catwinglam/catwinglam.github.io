@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   $(".logo").click(function(){
     //$(".bio").fadeIn(800);
-  window.location.href = "home";
+  window.location.href = "index";
   // $(".cv").fadeIn(800);
   });
 
