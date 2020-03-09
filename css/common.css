@@ -407,7 +407,7 @@ iframe {
 	}
 }
 
-@media only screen and (max-width:750px) {
+@media screen and (max-width:750px) {
 	.worksthumbnail{
 		grid-template-columns: 38% 38%;
 		grid-column-gap:8%;
