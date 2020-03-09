@@ -453,6 +453,9 @@ iframe {
 		text-align: left;
 	}
 
+	.worksL{
+		 display: none;
+	}
 }
 
 @viewport {
