@@ -438,6 +438,21 @@ iframe {
 		text-align: left;
 		margin-bottom: 80px;
 	}
+
+	.twocolumnFun{
+		display: grid;
+		grid-template-columns: 80%  ;
+		grid-column-gap: 5%;
+		padding: 10%;
+		font-size: 14px;
+		padding-bottom: 2%;
+	}
+
+	.funLeft{
+		position: relative;
+		text-align: left;
+	}
+
 }
 
 @viewport {
