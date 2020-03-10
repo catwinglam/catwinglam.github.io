@@ -326,7 +326,7 @@ color:#BBB;
 
 .twocolumnFun{
 	display: grid;
-	grid-template-columns: 22% 53%  ;
+	grid-template-columns: 18% 55%  ;
 	grid-column-gap: 5%;
 	padding-top: 10%;
 	padding-bottom: 5%;
@@ -335,8 +335,8 @@ color:#BBB;
 }
 
 .funLeft{
-	position: relative;
-	text-align: right;
+	position: left;
+	text-align: left;
 }
 .funRight{
 	text-align: left;
