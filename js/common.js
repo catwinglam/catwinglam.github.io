@@ -19,10 +19,10 @@ $(document).ready(function(){
     window.location.href = "fun";
   });
 
-  $(".works").click(function(){
-    //$(".bio").fadeIn(800);
-    window.location.href = "works";
-  });
+  // $(".works").click(function(){
+  //   //$(".bio").fadeIn(800);
+  //   window.location.href = "works";
+  // });
 
   $(".w12").click(function(){
     //$(".bio").fadeIn(800);
