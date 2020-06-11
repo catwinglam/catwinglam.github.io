@@ -59,13 +59,95 @@ body{
 }
 
 .nav-item {
-  /* border-top:  1px solid rgba(0, 0, 0, 0.8);
-	border-bottom:   1px solid rgba(0, 0, 0, 0.8); */
   font-size: 14px;
 	line-height: 24px;
-  /* text-align: center; */
 	text-align: left;
 	transition: all 0.3s;
+}
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    /* position: absolute; */
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    /* min-width:200px; */
+    /* height: 50px; */
+    text-align: center;
+    /* line-height: 50px; */
+    color: #000;
+    /* background: #2f3036; */
+    text-decoration: none;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: block;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    /* float: none; */
+}
+/*Prevent text wrapping*/
+li ul li a {
+    /* width: auto;
+    min-width: 100px; */
+    padding: 0 0px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    /* display: block; */
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    text-decoration: none;
+    color: #000;
+    /* background: #19c589; */
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+		ul li a:hover + .hidden, .hidden:hover {
+		    display: block;
+		}
+
 }
 
 .logo{
@@ -200,7 +282,6 @@ body{
 }
 /* ---------------------------------------------------------- */
 .w1,.w2,.w3,.w4,.w5,.w6,.w7,.w8,.w9,.w10,.w11,.w12,.w13,.a1,.a2 {
-
 	cursor:pointer;
 }
 
@@ -220,7 +301,7 @@ body{
   /* margin: 5%; */
 	/* margin-left: 90px; */
 	width: 100%;
-	height:100%;
+	/* height:100%; */
 	/* border-left:2px solid #FFF; */
 	z-index:999;
   /* background-color: rgba(255,0,255,0.05); */
@@ -235,29 +316,30 @@ body{
 }
 
 .wrapper{
-  width: 90%;
-	/* padding-top: 8%; */
-	padding-bottom: 16%;
-  margin-left: 260px;
-	/* margin-right: 0%; */
+  width: 80%;
+	float :right;
+	height:100%;
+	/* padding-bottom: 1000px; */
 }
 
 .workWrapper{
-  width: 90%;
+  width: 100%;
+	float :right;
 	padding-top: 3%;
+	height:100%;
 	/* padding-bottom: 16%; */
-  margin-left: 260px;
+  /* margin-left: 260px; */
 	/* margin-right: 0%; */
 }
 
 .worksthumbnail{
 	/* border: 5 solid rgba(0, 0, 0, 0.8); */
+	position: relative;
 	width: 100%;
 	height: 100%;
 	display: grid;
 	grid-column-gap: 8%;
 	grid-row-gap: 5.5%;
-	/* grid-template-columns: 16% 16% 16% 16% ; */
 	grid-template-columns: 22% 22% 22% ;
 	/* padding-left: 10%; */
 	padding-left: 3%;
@@ -358,10 +440,10 @@ body{
   z-index:1000;
 	float:left;
 	text-align:bottom;
-	margin-top: 12%;
+	/* margin-top: 12%; */
 	/* float:bottom; */
 	font-size:10px;
-	position:relative;
+	/* position:relative; */
 }
 
 .section{
@@ -407,20 +489,20 @@ iframe {
 @media (max-width:1300px) {
 	.worksthumbnail{
 		grid-template-columns: 22% 22% 22%;
-		grid-column-gap:8%;
+		grid-column-gap:6%;
 		grid-row-gap: 5.5%;
 	}
 
 	.footer{
-		margin-top: 20%;
+		margin-top: 10%;
 	}
 }
 
-/* @media screen and (max-width:950px) {
+ @media screen and (max-width:1100px) {
 	.worksthumbnail{
-		grid-template-columns: 38% 38%;
-		grid-column-gap:8%;
-		grid-row-gap: 4%;
+		grid-template-columns: 30% 30%;
+		grid-column-gap:5%;
+		grid-row-gap: 3%;
 	}
 
 	.footer{
@@ -442,8 +524,8 @@ iframe {
 	}
 
 	.bioL{
-		/* font-size: 20px; */
-		/* float: left;
+		font-size: 20px;
+		float: left;
 		text-align: left;
 		margin-bottom: 80px;
 	}
@@ -465,19 +547,43 @@ iframe {
 	.worksL{
 		 display: none;
 	}
-} */
+}
 
 @viewport {
   width: device-width ;
   zoom: 2.0 ;
 }
 
-/* @media only screen and (max-width:600px) {
-	.worksthumbnail{
-		grid-template-columns: 90%;
-		grid-row-gap: 2%;
+@media only screen and (max-width:760px) {
+	.nav{
+		position: relative;
+		/* margin-top: 5%; */
+		margin-top: 30px;
+		/* margin-left: 5%; */
+		margin-left: 30px;
+		margin-right: 5%;
+		/* margin-left: 4%;
+		margin-right: 4%; */
+		width:100%;
+		display: grid;
+		grid-template-columns: auto;
+		cursor:pointer;
+		z-index:1000;
 	}
-}*/
+	.wrapper{
+	  width: 100%;
+		height: 100%;
+		float :left;
+		padding-bottom: 14%;
+	}
+
+
+	.worksthumbnail{
+		float: left;
+		grid-template-columns: 100%;
+		grid-row-gap: 1%;
+	}
+}
 
 
 
