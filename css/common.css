@@ -554,7 +554,7 @@ iframe {
   zoom: 2.0 ;
 }
 
-/* @media only screen and (max-width:760px) {
+@media only screen and (max-width:760px) {
 	.nav{
 		position: relative;
 		margin-top: 30px;
@@ -579,7 +579,7 @@ iframe {
 		grid-template-columns: 100%;
 		grid-row-gap: 1%;
 	}
-} */
+}
 
 
 
