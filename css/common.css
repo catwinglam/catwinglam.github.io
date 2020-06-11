@@ -498,7 +498,7 @@ iframe {
 	}
 }
 
- /* @media screen and (max-width:1100px) {
+ @media screen and (max-width:1100px) {
 	.worksthumbnail{
 		grid-template-columns: 30% 30%;
 		grid-column-gap:5%;
@@ -544,10 +544,10 @@ iframe {
 		text-align: left;
 	}
 
-	.worksL{
+	/* .worksL{
 		 display: none;
-	}
-} */
+	} */
+}
 
 @viewport {
   width: device-width ;
