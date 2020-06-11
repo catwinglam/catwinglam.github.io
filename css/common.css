@@ -514,6 +514,7 @@ iframe {
 		grid-template-columns: 80%  ;
 		grid-column-gap: 5%;
 		padding: 10%;
+		padding-bottom: 20%;
 		font-size: 14px;
 	}
 
