@@ -23,6 +23,10 @@ $(document).ready(function(){
   //   //$(".bio").fadeIn(800);
   //   window.location.href = "works";
   // });
+  $(".w13").click(function(){
+    //$(".bio").fadeIn(800);
+    window.location.href = "infectioninvader";
+  });
 
   $(".w12").click(function(){
     //$(".bio").fadeIn(800);
