@@ -23,6 +23,12 @@ $(document).ready(function(){
   //   //$(".bio").fadeIn(800);
   //   window.location.href = "works";
   // });
+
+  $(".w14").click(function(){
+    //$(".bio").fadeIn(800);
+    window.location.href = "chirp-cheep-tweet";
+  });
+  
   $(".w13").click(function(){
     //$(".bio").fadeIn(800);
     window.location.href = "infectioninvader";
