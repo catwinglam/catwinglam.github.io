@@ -1,0 +1,5 @@
+*.plugin
+Plugins.json
+*.pdb
+*.dll
+!.gitignore

@@ -1,0 +1,42 @@
+.idea
+.DS_STORE
+CrashAutoSave*
+Backup/*
+Release/
+Debug/
+build/*
+TD-Faust.[0-9]*.toe
+SketchSynth.[0-9]*.toe
+thirdparty/clang+llvm-12.0.0-x86_64-apple-darwin.tar.xz
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
